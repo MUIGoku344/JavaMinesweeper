@@ -14,7 +14,6 @@ public class Minesweeper {
 
     private final JFrame frame;
     private final JPanel boardPanel;
-    private final JButton restartButton;
     private final JComboBox<String> difficultyBox;
     private final JLabel timerLabel;
     private final JLabel mineLabel;
@@ -32,7 +31,7 @@ public class Minesweeper {
         frame = new JFrame("Minesweeper");
         boardPanel = new JPanel();
 
-        restartButton = new JButton("New Game");
+        JButton restartButton = new JButton("New Game");
 
         String[] difficulties = {"Easy", "Medium", "Hard"};
         difficultyBox = new JComboBox<>(difficulties);
